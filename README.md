@@ -55,7 +55,7 @@
   
   <h4>STH Comet</h4>
    <p>O STH-Comet, uma parte essencial da plataforma FIWARE, desempenha um papel fundamental na preservação em grande escala de informações contextuais passadas. Sua colaboração com o Orion Context Broker permite a captura, armazenamento e consulta eficientes de dados       históricos. Com capacidades avançadas, como o armazenamento otimizado de séries temporais e a realização de consultas agregadas e de séries temporais, o STH-Comet oferece uma interface RESTful para a interação, permitindo aos desenvolvedores acessar e analisar           dados passados de maneira ágil. Em suma, o STH-Comet simplifica o armazenamento e a recuperação de informações contextuais históricas na estrutura FIWARE.</p>
-   <p>Clique <a href="https://github.com/Rodrigo-Brasileiro/Sprint3edge/blob/main/sth-comet-architecture.png">aqui </a> para compreender melhor sobre o funcionamento do sthcomet. </p>
+   <p>Clique <a href="https://github.com/Rodrigo-Brasileiro/caseHapVida/blob/main/sth-comet-architecture.png">aqui </a> para compreender melhor sobre o funcionamento do sthcomet. </p>
    
   
   <h4>MongoDB</h4>
@@ -67,9 +67,30 @@
    <p>O Eclipse Mosquitto é um broker MQTT usado na plataforma FIWARE para facilitar a troca de mensagens entre dispositivos IoT e outros componentes. Ele suporta recursos de autenticação, segurança e controle de acesso, fornecendo uma solução escalável e configurável para a comunicação MQTT na plataforma FIWARE. Os dados são armazenados no tópico TEF (Telemetria e Monitoramento de Equipamentos).</p>
    
    <h3>Arquitetura da solução:</h3>
+   
+  ![image](https://github.com/Rodrigo-Brasileiro/caseHapVida/assets/126472820/2bef4fe3-4a10-4349-983d-aa7af963befd)
+<p> Clique <a href="https://github.com/Rodrigo-Brasileiro/caseHapVida/blob/main/interwatch.drawio">aqui </a> para acessar o draw.io da arquitetura da solução.</p>
+ 
+ <h2>Tecnologia usada e como iniciar o projeto</h2>
+   
+   <ol>Para esse projeto, utilizamos a IDE do arduino para programar o ESP32, desse modo, toda a linguagem é em c++. Entretanto, primeiramente é preciso instalar o pacote do ESP32 da espressif, seguindo <a herf="https://www.youtube.com/watch?v=Ozr1SXwir9g">esse</a> tutorial. Agora para a aplicação do Fiware, ela é toda configurada em python, abordada no tópico seguinde;</ol>
+   <ol>Para toda a configuração da Tela OLED e acelerômetro, utilizamos as bibliotecas disponíveis na IDE do arduino, como: Adafruit GFX Library, Adafruit SSD1306 e Adafruit MPU6050, já para configurar o sistema a internet e protocolo mqtt utilizamos a biblioteca PubSubClient(by nick o'lary). Terminado isso basta utilizar o códigos que disponibilizamos e gravar o código no ESP32.</ol>
+   <ol>Em seguida, ligue sua máquina virtual e estebeleça os passos do Fiware e teste o programa como supracitado.</ol>
+    <p>Clique <a href="">aqui</a> para visualizar o código do ESP32.</p>
+    
+   <h3>Dashboard para análise:</h3>
+  <p>No intuito de deixar mais fácil a compreensão das leituras dos dados, foi criado um dashboard em python, o qual tem como objetivo a análise temporal dos dados que foram armazenados pelo STH-COMET com registro de batimentos cardíacos identificados pelo sensor ao longo do tempo.</p>
   
- 
- 
+  <p>Clique <a href="">aqui </a> para acessar o código do dashboard em python. Para utiliza-lá, basta baixar os arquivos e os executar em um ambiente apropriado, como Visual Studio Code. </p>
+
+  <h3>Referências</h3>
+ <p>Buscando mais informações e aprimoramento, nossas referências foram:</p>
+     <ol><li>Link: https://github.com/fabiocabrini/fiware</li>
+         <li>Link: </li>
+         <li>Link: </li>
+        <li> Link: </li>
+     </ol>
+
    
 
        
