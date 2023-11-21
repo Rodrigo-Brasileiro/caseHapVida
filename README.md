@@ -78,9 +78,9 @@
    <ol>Em seguida, ligue sua máquina virtual e estebeleça os passos do Fiware e teste o programa como supracitado.</ol>
     <p>Clique <a href="https://github.com/Rodrigo-Brasileiro/caseHapVida/blob/main/InterWatch_codigo.ino">aqui</a> para visualizar o código do ESP32.</p>
  
- <h2>Simulação no WOKWI</h2>
-  <p>Wokwi é uma plataforma online que oferece simuladores de hardware para desenvolvimento e teste de projetos eletrônicos. Pensando nisso, foi realizado o mesmo projeto no WOKWI, para facilitar a compreensão e caso não seja possível a reprodução física.</p>
-    <p>Caso queira verificar a simulação acesse esse link https://wokwi.com/projects/381962569105608705 ou clique <a herf="https://wokwi.com/projects/381962569105608705">aqui</a>
+  <h2>Simulação no WOKWI</h2>
+    <p>Wokwi é uma plataforma online que oferece simuladores de hardware para desenvolvimento e teste de projetos eletrônicos. Pensando nisso, foi realizado o mesmo projeto no WOKWI, para facilitar a compreensão e caso não seja possível a reprodução física.</p>
+    <p>Caso queira verificar a simulação acesse esse link https://wokwi.com/projects/381962569105608705 ou Clique <a href="https://wokwi.com/projects/381962569105608705">aqui </a> 
     
    <h2>Dashboard para análise:</h2>
   <p>No intuito de deixar mais fácil a compreensão das leituras dos dados, foi criado um dashboard em python, o qual tem como objetivo a análise temporal dos dados que foram armazenados pelo STH-COMET com registro de batimentos cardíacos identificados pelo sensor ao longo do tempo.</p>
