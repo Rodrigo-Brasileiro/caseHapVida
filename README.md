@@ -42,7 +42,7 @@
      <p>Tendo essa etapa concluída, primeiro passo é entrar nesse <a href="https://www.virtualbox.org">site</a> e clicar no botão download para fazer a instação da máquina virtual, no nosso caso a VirtualBox. O próximo é instalar o programa que usaremos, nessa situação, o Ubuntu versão 22.04lts, nesse <a href="https://ubuntu.com/download/server">site</a>. O terceiro passo é criar e configurar a máquina, basta clicar no botão "novo" dentro do VirtualBox, em sequência dê o nome "ubuntu" a sua máquina, e clique em próximo até finalizar. Finalizado, marque a máquina criada e selecione a opção "configurações", nesse momento vá em armazenamento e do lado direito estará uma aba para adicionar o arquivo ubuntu que você baixou, após isso só iniciar a máquina e realizar as configuralções iniciais de usuário.</p>
   <h4>Inicialização</h4>
     <p>A primeira etapa após abrir o sistema Linux é abrir o terminal, feito isso, é preciso fazer a instalação de uma ferramenta chamada docker compose que faciliata a criação, gerenciamento e execução de contêiners de aplicativos, para isso, clique <a href="https://docs.docker.com/engine/install/ubuntu/"> aqui</a> e siga as instruções. Conluída essa etapa, seguimos para a instalação e inicialização do Fiware, faça esses comandos no terminal:</p>
-      <ol> git clone https://github.com/Rodrigo-Brasileiro/Sprint3edge - para copiar todos os arquivos disponíveis nesse repositório </ol>
+      <ol> git clone https://github.com/Rodrigo-Brasileiro/caseHapVida - para copiar todos os arquivos disponíveis nesse repositório </ol>
       <ol> cd fiware - para entrar na pasta fiware </ol>
       <ol> docker compose up -d - para abrir as portas do fiware </ol>
     <p>Nesse instante, vamos verificar se está tudo correto com as portas abertas, para isso, vamos no site <a href="https://www.postman.com">postman</a> que é site de suporte de API que usaremos como comunicador e receptor de respostas do ESP32, crie uma conta e um "my workspace", jogue os arquivos do repositório desse github, vá na pasta 1.1, crie uma variável chamada url com seu enderço de IP e clique em send, com a resposta OK, a porta está saúdavel.</p>
@@ -76,19 +76,25 @@
    <ol>Para esse projeto, utilizamos a IDE do arduino para programar o ESP32, desse modo, toda a linguagem é em c++. Entretanto, primeiramente é preciso instalar o pacote do ESP32 da espressif, seguindo <a herf="https://www.youtube.com/watch?v=Ozr1SXwir9g">esse</a> tutorial. Agora para a aplicação do Fiware, ela é toda configurada em python, abordada no tópico seguinde;</ol>
    <ol>Para toda a configuração da Tela OLED e acelerômetro, utilizamos as bibliotecas disponíveis na IDE do arduino, como: Adafruit GFX Library, Adafruit SSD1306 e Adafruit MPU6050, já para configurar o sistema a internet e protocolo mqtt utilizamos a biblioteca PubSubClient(by nick o'lary). Terminado isso basta utilizar o códigos que disponibilizamos e gravar o código no ESP32.</ol>
    <ol>Em seguida, ligue sua máquina virtual e estebeleça os passos do Fiware e teste o programa como supracitado.</ol>
-    <p>Clique <a href="">aqui</a> para visualizar o código do ESP32.</p>
+    <p>Clique <a href="https://github.com/Rodrigo-Brasileiro/caseHapVida/blob/main/InterWatch_codigo.ino">aqui</a> para visualizar o código do ESP32.</p>
+ 
+ <h2>Simulação no WOKWI</h2>
+  <p>Wokwi é uma plataforma online que oferece simuladores de hardware para desenvolvimento e teste de projetos eletrônicos. Pensando nisso, foi realizado o mesmo projeto no WOKWI, para facilitar a compreensão e caso não seja possível a reprodução física.</p>
+    <p>Caso queira verificar a simulação acesse esse link https://wokwi.com/projects/381962569105608705 ou clique <a herf="https://wokwi.com/projects/381962569105608705">aqui</a>
     
-   <h3>Dashboard para análise:</h3>
+   <h2>Dashboard para análise:</h2>
   <p>No intuito de deixar mais fácil a compreensão das leituras dos dados, foi criado um dashboard em python, o qual tem como objetivo a análise temporal dos dados que foram armazenados pelo STH-COMET com registro de batimentos cardíacos identificados pelo sensor ao longo do tempo.</p>
-  
-  <p>Clique <a href="">aqui </a> para acessar o código do dashboard em python. Para utiliza-lá, basta baixar os arquivos e os executar em um ambiente apropriado, como Visual Studio Code. </p>
+
+  ![image](https://github.com/Rodrigo-Brasileiro/caseHapVida/assets/126472820/2a69e46c-4c23-49d9-a8e3-6abc4bceae28)
+
+  <p>Clique <a href="https://github.com/Rodrigo-Brasileiro/caseHapVida/blob/main/interwatch.py">aqui </a> para acessar o código do dashboard em python. Para utiliza-lá, basta baixar os arquivos e os executar em um ambiente apropriado, como Visual Studio Coden ou google Colab. </p>
 
   <h3>Referências</h3>
  <p>Buscando mais informações e aprimoramento, nossas referências foram:</p>
      <ol><li>Link: https://github.com/fabiocabrini/fiware</li>
-         <li>Link: </li>
-         <li>Link: </li>
-        <li> Link: </li>
+         <li>Link: https://www.cnnbrasil.com.br/saude/transplante-de-coracao-quantas-pessoas-esperam-por-um-novo-orgao-no-brasil/#:~:text=A%20fila%20de%20espera%20para,Nacional%20de%20Transplantes%20(STN) </li>
+         <li>Link: https://www.scielosp.org/pdf/csp/2006.v22n10/2229-2239/pt </li>
+        <li> Link: https://www.analog.com/media/en/technical-documentation/data-sheets/max30102.pdf </li>
      </ol>
 
    
