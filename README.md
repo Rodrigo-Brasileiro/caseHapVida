@@ -36,9 +36,9 @@
   <h3>Instação da máquina virtual</h3>
     <p>A princípio, os requisitos de hardware para essa etapa são:</p>
 
-   <ol>Núcleos de Processamento - **1vCPU**</ol>
-   <ol>Memória RAM - **1GB** </ol>
-   <ol>Armazenamento Secundário Mínimo - **20GB HD e/ou SSD**</ol>
+   <ol>-Núcleos de Processamento - **1vCPU**</ol>
+   <ol>-Memória RAM - **1GB**</ol>
+   <ol>-Armazenamento Secundário Mínimo - **20GB HD e/ou SSD**</ol>
      <p>Tendo essa etapa concluída, primeiro passo é entrar nesse <a href="https://www.virtualbox.org">site</a> e clicar no botão download para fazer a instação da máquina virtual, no nosso caso a VirtualBox. O próximo é instalar o programa que usaremos, nessa situação, o Ubuntu versão 22.04lts, nesse <a href="https://ubuntu.com/download/server">site</a>. O terceiro passo é criar e configurar a máquina, basta clicar no botão "novo" dentro do VirtualBox, em sequência dê o nome "ubuntu" a sua máquina, e clique em próximo até finalizar. Finalizado, marque a máquina criada e selecione a opção "configurações", nesse momento vá em armazenamento e do lado direito estará uma aba para adicionar o arquivo ubuntu que você baixou, após isso só iniciar a máquina e realizar as configuralções iniciais de usuário.</p>
   <h4>Inicialização</h4>
     <p>A primeira etapa após abrir o sistema Linux é abrir o terminal, feito isso, é preciso fazer a instalação de uma ferramenta chamada docker compose que faciliata a criação, gerenciamento e execução de contêiners de aplicativos, para isso, clique <a href="https://docs.docker.com/engine/install/ubuntu/"> aqui</a> e siga as instruções. Conluída essa etapa, seguimos para a instalação e inicialização do Fiware, faça esses comandos no terminal:</p>
@@ -73,9 +73,9 @@
  
  <h2>Tecnologia usada e como iniciar o projeto</h2>
    
-   <ol>Para esse projeto, utilizamos a IDE do arduino para programar o ESP32, desse modo, toda a linguagem é em c++. Entretanto, primeiramente é preciso instalar o pacote do ESP32 da espressif, seguindo <a herf="https://www.youtube.com/watch?v=Ozr1SXwir9g">esse</a> tutorial. Agora para a aplicação do Fiware, ela é toda configurada em python, abordada no tópico seguinde;</ol>
-   <ol>Para toda a configuração da Tela OLED e acelerômetro, utilizamos as bibliotecas disponíveis na IDE do arduino, como: Adafruit GFX Library, Adafruit SSD1306 e Adafruit MPU6050, já para configurar o sistema a internet e protocolo mqtt utilizamos a biblioteca PubSubClient(by nick o'lary). Terminado isso basta utilizar o códigos que disponibilizamos e gravar o código no ESP32.</ol>
-   <ol>Em seguida, ligue sua máquina virtual e estebeleça os passos do Fiware e teste o programa como supracitado.</ol>
+   <p>Para esse projeto, utilizamos a IDE do arduino para programar o ESP32, desse modo, toda a linguagem é em c++. Entretanto, primeiramente é preciso instalar o pacote do ESP32 da espressif, seguindo <a herf="https://www.youtube.com/watch?v=Ozr1SXwir9g">esse</a> tutorial. Agora para a aplicação do Fiware, ela é toda configurada em python, abordada no tópico seguinde;</p>
+   <p>Para toda a configuração da Tela OLED e acelerômetro, utilizamos as bibliotecas disponíveis na IDE do arduino, como: Adafruit GFX Library, Adafruit SSD1306 e Adafruit MPU6050, já para configurar o sistema a internet e protocolo mqtt utilizamos a biblioteca PubSubClient(by nick o'lary). Terminado isso basta utilizar o códigos que disponibilizamos e gravar o código no ESP32.</p>
+   <p>Em seguida, ligue sua máquina virtual e estebeleça os passos do Fiware e teste o programa como supracitado.</p>
     <p>Clique <a href="https://github.com/Rodrigo-Brasileiro/caseHapVida/blob/main/InterWatch_codigo.ino">aqui</a> para visualizar o código do ESP32.</p>
  
   <h2>Simulação no WOKWI</h2>
